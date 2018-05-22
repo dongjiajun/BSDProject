@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:minHeight="100dp"
+ >
+    
+   
+      <!--   <ImageView
+            android:id="@+id/warn_pic"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher"
+            /> -->
+        <TextView
+            android:id="@+id/warn_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="报警内容"
+            android:textSize="30sp"
+            android:textStyle=""
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+     
+    
+
+</LinearLayout>

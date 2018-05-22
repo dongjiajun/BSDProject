@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+      <!--   <ImageView
+            android:layout_width="42dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            /> -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:text="波司登智能配送中心-立库监控系统"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/time_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="-- -- -- -- -- --"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            />
+        
+        </RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#ffffff"
+    >
+    
+    <LinearLayout
+        android:id="@+id/bar_test"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="2dp"
+        >
+
+       
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            />
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="今日入库量:"
+                   android:gravity="left"
+                   android:background="#ffffff"
+                   android:textSize="20sp"
+                    />
+                <TextView
+                   android:id="@+id/all_in_textview"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="XXX"
+                   android:gravity="center"
+                   android:layout_margin="1dp"
+				   android:background="#ffffff"
+                   android:textSize="60sp"
+                    />
+                </LinearLayout>
+                
+                <TableLayout
+                    android:layout_width="match_parent"
+    				android:layout_height="0dp" 
+    				android:layout_weight="2"
+    				android:background="#000000"
+    				android:stretchColumns="2"
+    				android:layout_marginTop="10dp"
+    				android:layout_marginBottom="40dp"
+    				android:layout_marginRight="20dp"
+                    >
+                	
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+					android:gravity="center"
+					
+					android:layout_marginTop="1dp"
+					android:layout_marginRight="1dp"
+                    >
+	            <TextView
+		            android:layout_height="match_parent"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:text="统计项"
+					android:background="#cce8cf"
+					android:gravity="center"
+					android:textSize="20sp"
+            		/>
+	            <TextView
+	                android:layout_marginLeft="1dp"
+		            android:layout_height="match_parent"
+		            android:text="完成"
+		            android:gravity="center"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+					android:background="#cce8cf"
+					android:textSize="20sp"
+            		/>
+	            <TextView
+	                android:layout_marginLeft="1dp"
+		            android:layout_height="match_parent"
+		            android:text="剩余"
+		            android:gravity="center"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+					android:background="#cce8cf"
+					android:textSize="20sp"
+            		/>
+        			</TableRow>
+        			
+                 <TableRow
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:layout_marginTop="1dp"
+					android:layout_marginRight="1dp"
+                     >
+	            <TextView
+		            android:layout_height="match_parent"
+		            android:text="整托出库"
+					android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:background="#cce8cf"
+		            android:gravity="center"
+		            android:textSize="20sp"
+            		/>
+	            <TextView
+	                android:id="@+id/out_full_textview"
+	                android:layout_marginLeft="1dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:background="#ffffff"
+		            android:text="01"
+		            android:textSize="20sp"
+
+            		/>
+	            <TextView
+	                android:id="@+id/out_full_surplus_textview"
+	                android:layout_marginLeft="1dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:text="0"
+		            android:background="#ffffff"
+		            android:textSize="20sp"
+
+            		/>
+        			</TableRow>
+        			
+                  <TableRow
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_marginTop="1dp"
+					android:layout_marginRight="1dp"
+                      >
+	            <TextView
+		            android:layout_height="match_parent"
+		            android:text="自动拆盘"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:background="#cce8cf"
+		            android:gravity="center"
+		            android:textSize="20sp"
+
+            		/>
+	            <TextView
+	                android:id="@+id/out_mechine_textview"
+	                android:layout_marginLeft="1dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:text="0"
+		            android:background="#ffffff"
+		            android:textSize="20sp"
+
+            		/>
+	            <TextView
+	                android:id="@+id/out_mechine_surplus_textview"
+	                android:layout_marginLeft="1dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:text="0"
+		            android:background="#ffffff"
+		            android:textSize="20sp"
+
+            		/>
+        			</TableRow>
+        			
+                  <TableRow
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_marginTop="1dp"
+					  android:layout_marginRight="1dp"
+					  android:layout_marginBottom="1dp"
+                      >
+	            <TextView
+		            android:layout_height="match_parent"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:text="人工出库"
+		            android:background="#cce8cf"
+		            android:gravity="center"
+		            android:textSize="20sp"
+
+            		/>
+	            <TextView
+	                android:id="@+id/out_people_textview"
+	                android:layout_marginLeft="1dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:text="0"
+		            android:background="#ffffff"
+		            android:textSize="20sp"
+
+            		/>
+	            <TextView
+	                android:id="@+id/out_people_surplus_textview"
+	                android:layout_marginLeft="1dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:layout_width="0dp"
+		            android:layout_weight="1"
+		            android:text="0"
+		            android:background="#ffffff"
+		            android:textSize="20sp"
+
+            		/>
+        			</TableRow>
+        			
+                  
+                </TableLayout>
+    	</LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
